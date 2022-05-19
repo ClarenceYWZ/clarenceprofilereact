@@ -58,7 +58,7 @@ const FirebaseLogin = ({ ...others }) => {
   }
 
   function onClickSignIn() {
-    fetch("http://localhost:5000/emailauthorized", {
+    fetch("https://api.clarenceyeoprofile.com/emailauthorized", {
       method: "POST",
       body: JSON.stringify({
         value: JSON.stringify({ email: email, displayName: displayName }),
@@ -71,11 +71,11 @@ const FirebaseLogin = ({ ...others }) => {
       });
   }
   function linkedinHandler() {
-    window.location.href = "http://localhost:5000/linkedinlogin";
+    window.location.href = "https://api.clarenceyeoprofile.com/linkedinlogin";
   }
 
   function googleHandler() {
-    window.location.href = "http://localhost:5000/googlelogin";
+    window.location.href = "https://api.clarenceyeoprofile.com/googlelogin";
   }
 
   const handleClickShowPassword = () => {

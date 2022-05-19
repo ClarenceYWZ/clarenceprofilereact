@@ -16,7 +16,7 @@ import Login from "./login/Login3";
 // import DarkMainDemo from "./dark/MainDemo";
 import DarkPortfolioLanding from "./dark/PortfolioLanding";
 
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { HashRouter, BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 
 class Root extends Component {

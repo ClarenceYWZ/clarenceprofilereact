@@ -87,7 +87,7 @@ export default function PortfolioDialog(props) {
 
   function onClickRatingSubmit() {
     setButtonDisable(true);
-    fetch("http://localhost:5000/postPortfolioRating", {
+    fetch("https://api.clarenceyeoprofile.com/postPortfolioRating", {
       method: "POST",
       body: JSON.stringify({
         value: JSON.stringify({
