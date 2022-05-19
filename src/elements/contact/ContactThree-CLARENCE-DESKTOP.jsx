@@ -61,7 +61,7 @@ export default function ContactThree(props) {
 
   function onClickTesti() {
     setButtonDisable(true);
-    fetch("http://localhost:5000/postTestimonial", {
+    fetch("https://api.clarenceyeoprofile.com/postTestimonial", {
       method: "POST",
       body: JSON.stringify({
         value: JSON.stringify({

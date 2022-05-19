@@ -20,7 +20,7 @@ import TabTwo from "../elements/tab/TabTwo";
 import ContactThree from "../elements/contact/ContactThree";
 import PortfolioList from "../elements/portfolio/PortfolioList";
 import ServiceList from "../elements/service/ServiceList";
-import BlogContent from "../elements/blog/BlogContent";
+// import BlogContent from "../elements/blog/BlogContent";
 import RatingLabels from "./RatingLabels";
 
 const SlideList = [
@@ -158,7 +158,7 @@ const PortfolioLanding = () => {
   let title = "About Me",
     description =
       "A motivated individual who masters and develops programming skills through self-teaching and build system which benefit the company and field. Consistently recognized as a competent leader who bring motivation and cohesiveness to his team.";
-  const PostList = BlogContent.slice(0, 3);
+  //   const PostList = BlogContent.slice(0, 3);
   return Object.keys(userData).length ? (
     <div className="active-dark">
       <Helmet pageTitle="Portfolio Landing" />

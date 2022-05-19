@@ -22,7 +22,7 @@ import * as serviceWorker from "./serviceWorker";
 class Root extends Component {
   render() {
     return (
-      <BrowserRouter basename={"/"}>
+      <HashRouter basename={"/"}>
         <PageScrollTop>
           <Switch>
             <Route exact path="/login" component={Login} />
@@ -33,7 +33,7 @@ class Root extends Component {
             <Redirect from="*" to="/login" />
           </Switch>
         </PageScrollTop>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }

@@ -57,7 +57,7 @@ const PortfolioLanding = () => {
 
   const history = useHistory();
   useEffect(() => {
-    fetch("http://localhost:5000/getUserProfile", {
+    fetch("https://api.clarenceyeoprofile.com/getUserProfile", {
       method: "POST",
       body: JSON.stringify({
         value: JSON.stringify({ loginType: loginType, tokenId: tokenId }),
@@ -71,7 +71,7 @@ const PortfolioLanding = () => {
         console.log(error);
         history.push("/login");
       });
-    fetch("http://localhost:5000/getPorfolioProjects")
+    fetch("https://api.clarenceyeoprofile.com/getPorfolioProjects")
       .then((res) => res.json())
       .then((data) => {
         setPorfolioProjects(data);
@@ -84,7 +84,7 @@ const PortfolioLanding = () => {
   }, [userData]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/getTestimonial")
+    fetch("https://api.clarenceyeoprofile.com/getTestimonial")
       .then((res) => res.json())
       .then((data) => {
         setTestimonialList(data);
